@@ -6,8 +6,10 @@ import waalaxyImage from "/src/assets/waalaxyImage.png"
 export const Company = () => {
 	return (
 		<section className={styles.company}>
-			<img className={styles.bg} src={waalaxyBackGround} alt="Waalaxy Bg" />
-			<img className={styles.logo} src={waalaxyImage} alt="Waalaxy Image" />
+			<div className={styles.imgContainer}>
+				<img className={styles.bg} src={waalaxyBackGround} alt="Waalaxy Bg" />
+				<img className={styles.logo} src={waalaxyImage} alt="Waalaxy Image" />
+			</div>
 			<div className={styles.details}>
 				<h1>Waalaxy</h1>
 				<h4>Outil n°1 de Propspection LinkedIn</h4>

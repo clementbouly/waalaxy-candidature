@@ -3,6 +3,9 @@
 	padding: 0;
 	height: 100%;
 	overflow: hidden;
+}
+
+.imgContainer {
 	position: relative;
 }
 
@@ -14,8 +17,12 @@
 	width: 8rem;
 	border: 5px solid white;
 	position: absolute;
-	top: 5rem;
+	top: 50%;
 	left: 1.3rem;
+
+	@media screen and (max-width: 600px) {
+		width: 6rem;
+	}
 }
 
 .details {
@@ -46,6 +53,10 @@
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
+
+	@media screen and (max-width: 600px) {
+		font-size: 0.8rem;
+	}
 }
 
 .network img {
@@ -71,6 +82,12 @@
 
 .nav ul li {
 	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+	.nav ul li:last-child {
+		display: none;
+	}
 }
 
 .selected {

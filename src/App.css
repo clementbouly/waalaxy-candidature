@@ -1,6 +1,8 @@
 .main {
+	width: 100%;
 	display: grid;
-	padding: 1.5rem 25rem;
+	margin: 0 auto;
+	width: 70rem;
 	padding-top: 4rem;
 	gap: 1rem;
 	grid-template-areas:
@@ -11,7 +13,7 @@
 	grid-template-columns: 2fr 1fr 1.1fr;
 
 	/* media query for screen smaller than desktop */
-	@media (max-width: 1500px) {
+	@media (max-width: 1024px) {
 		grid-template-areas:
 			"company company company"
 			"ads ads ads"
@@ -19,7 +21,8 @@
 			"jobs jobs jobs"
 			"other other other";
 		grid-template-columns: 1fr;
-		padding: 1.5rem 1rem;
+		padding: 1.5rem 0rem;
+		width: 95%;
 	}
 }
 

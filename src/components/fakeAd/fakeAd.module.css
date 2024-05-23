@@ -15,7 +15,7 @@
 .fakeAd h2 {
 	position: absolute;
 	bottom: 0;
-	padding-left: 0.5rem;
+	padding: 0.5rem 0.5rem;
 	background-color: rgba(0, 0, 0, 0.381);
 	color: white;
 	font-size: 1rem;

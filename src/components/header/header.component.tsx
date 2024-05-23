@@ -21,46 +21,48 @@ export const Header = () => {
 
 	return (
 		<header className={styles.header}>
-			<div className={styles.headerLeft}>
-				<div className={styles.logo}>
-					<img src={linkedinLogo} alt="LinkedIn Logo" />
+			<div className={styles.headerContent}>
+				<div className={styles.headerLeft}>
+					<div className={styles.logo}>
+						<img src={linkedinLogo} alt="LinkedIn Logo" />
+					</div>
+					<div className={styles.searchBar}>
+						<input type="text" placeholder="Recherche" onChange={replaceSearchInput} value={searchInput} />
+					</div>
 				</div>
-				<div className={styles.searchBar}>
-					<input type="text" placeholder="Recherche" onChange={replaceSearchInput} value={searchInput} />
-				</div>
-			</div>
-			<nav onClick={fakeClick} className={styles.headerNav}>
-				<ul>
-					<li>
-						<img src={home} alt="Home" />
-						<a href="#">Accueil</a>
-					</li>
-					<li>
-						<img src={networkLogo} alt="Network" />
-						<a href="#">Réseau</a>
-					</li>
-					<li>
-						<img src={jobLogo} alt="Jobs" />
-						<a href="#">Offres d'emploi</a>
-					</li>
-					<li>
-						<img src={messagesLogo} alt="Messages" />
-						<a href="#">Messagerie</a>
-					</li>
-					<li>
-						<img src={notificationsLogo} alt="Notifications" />
-						<a href="#">Notifications</a>
-					</li>
+				<nav onClick={fakeClick} className={styles.headerNav}>
+					<ul>
+						<li>
+							<img src={home} alt="Home" />
+							<a href="#">Accueil</a>
+						</li>
+						<li>
+							<img src={networkLogo} alt="Network" />
+							<a href="#">Réseau</a>
+						</li>
+						<li>
+							<img src={jobLogo} alt="Jobs" />
+							<a href="#">Offres d'emploi</a>
+						</li>
+						<li>
+							<img src={messagesLogo} alt="Messages" />
+							<a href="#">Messagerie</a>
+						</li>
+						<li>
+							<img src={notificationsLogo} alt="Notifications" />
+							<a href="#">Notifications</a>
+						</li>
 
-					<li className={styles.profile} onClick={goToProfile}>
-						<img src={profileImage} alt="Profile Picture" />
-						<a href="#">Clément B</a>
-					</li>
-					<li className={styles.premium}>
-						<a href="#">Recrutez Clément Premium pour min 45K</a>
-					</li>
-				</ul>
-			</nav>
+						<li className={styles.profile} onClick={goToProfile}>
+							<img src={profileImage} alt="Profile Picture" />
+							<a href="#">Clément B</a>
+						</li>
+						<li className={styles.premium}>
+							<a href="#">Recrutez Clément Premium pour min 45K</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 	)
 }
