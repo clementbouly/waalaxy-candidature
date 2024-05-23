@@ -1,6 +1,7 @@
 .main {
 	display: grid;
 	padding: 1.5rem 25rem;
+	padding-top: 4rem;
 	gap: 1rem;
 	grid-template-areas:
 		"company company ads"
@@ -8,6 +9,18 @@
 		"alert alert other"
 		"jobs jobs  other";
 	grid-template-columns: 2fr 1fr 1.1fr;
+
+	/* media query for screen smaller than desktop */
+	@media (max-width: 1500px) {
+		grid-template-areas:
+			"company company company"
+			"ads ads ads"
+			"alert alert alert"
+			"jobs jobs jobs"
+			"other other other";
+		grid-template-columns: 1fr;
+		padding: 1.5rem 1rem;
+	}
 }
 
 section {
@@ -15,8 +28,4 @@ section {
 	border: 1px solid #ccc;
 	padding: 1rem;
 	background-color: white;
-}
-
-.other {
-	grid-area: other;
 }

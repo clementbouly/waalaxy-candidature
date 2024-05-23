@@ -12,3 +12,21 @@
 .button:hover {
 	background-color: #004182;
 }
+
+.secondaryButton {
+	font-weight: bold;
+	font-size: 1rem;
+	border-radius: 5rem;
+	padding: 0.4rem 1rem;
+	cursor: pointer;
+	border: none;
+	background-color: white;
+	color: #0a66c2;
+	border: 1px solid #0a66c2;
+}
+
+.secondaryButton:hover {
+	background-color: #f3f3f3;
+	border: 2px solid #0a66c2;
+	color: #004182;
+}

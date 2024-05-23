@@ -7,7 +7,7 @@ export const Alert = () => {
 	return (
 		<section className={styles.alert}>
 			<img src={notificationsLogo} alt="alert" />
-			Alerte : Un candidat intéressant est disponnible actuellement !
+			Alerte : Un candidat intéressant est disponible actuellement !
 			<Button onClick={goToProfile}>Voir le candidat</Button>
 		</section>
 	)

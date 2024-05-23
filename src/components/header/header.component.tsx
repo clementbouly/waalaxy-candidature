@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { goToProfile } from "../utils/utils"
 import styles from "./header.module.css"
 import home from "/src/assets/home.svg"
@@ -9,8 +10,13 @@ import notificationsLogo from "/src/assets/notificationsLogo.svg"
 import profileImage from "/src/assets/profileImage.png"
 
 export const Header = () => {
+	const [searchInput, setSearchInput] = useState("")
 	const fakeClick = () => {
 		alert("Tu as cru que j'allais recoder Linkedin ? 20% d'effort, 80% de résultat !")
+	}
+
+	const replaceSearchInput = () => {
+		setSearchInput("Clément Bouly")
 	}
 
 	return (
@@ -20,7 +26,7 @@ export const Header = () => {
 					<img src={linkedinLogo} alt="LinkedIn Logo" />
 				</div>
 				<div className={styles.searchBar}>
-					<input type="text" placeholder="Recherche" />
+					<input type="text" placeholder="Recherche" onChange={replaceSearchInput} value={searchInput} />
 				</div>
 			</div>
 			<nav onClick={fakeClick} className={styles.headerNav}>

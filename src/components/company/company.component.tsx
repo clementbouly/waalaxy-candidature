@@ -14,9 +14,11 @@ export const Company = () => {
 				<p>Développement de logiciels Montpellier, Hérault 21 K abonnés 11-50 employés</p>
 				<div className={styles.network}>
 					<img src={profileImage} alt="Profile Picture" />
-					<a href="https://www.linkedin.com/in/chloedalger/">Chloé</a>
-					et <a href="https://www.linkedin.com/in/fabien-turgut/">Fabien</a>
-					ont été formé à Polytech en IG comme Clément
+					<div>
+						<a href="https://www.linkedin.com/in/chloedalger/">Chloé</a> ,
+						<a href="https://www.linkedin.com/in/fabien-turgut/">Fabien</a> et 13 autres ont été formé à
+						Polytech
+					</div>
 				</div>
 			</div>
 			<div className={styles.nav}>

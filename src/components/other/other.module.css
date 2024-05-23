@@ -1,0 +1,76 @@
+.other {
+	grid-area: other;
+}
+
+.other h1 {
+	font-size: 1.2rem;
+	margin-top: 0;
+}
+
+.candidates {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #ccc;
+}
+
+.noOtherCandidates {
+	text-align: center;
+	font-size: 0.9rem;
+	color: #666666;
+	border-radius: 0.3rem;
+	border: 1px solid #ccc;
+	width: 13rem;
+	padding: 1rem 0;
+	margin: 1rem auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+
+	&& img {
+		width: 3rem;
+	}
+}
+
+.profileCard {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 0.3rem;
+	border: 1px solid #ccc;
+	background-color: white;
+	margin-top: 1rem;
+	width: 13rem;
+	transition: all 0.2s;
+	height: 19rem;
+}
+
+.profileCard:hover {
+	/* shadow for the bottom */
+	box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.profileCard h2 {
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.profileCard p {
+	font-size: 0.9rem;
+	margin: 0.2rem;
+	color: #666666;
+}
+
+.profileCard img {
+	width: 7rem;
+	border-radius: 50%;
+	margin-left: 5px;
+}
+
+.contact {
+	text-align: center;
+	cursor: text;
+}
