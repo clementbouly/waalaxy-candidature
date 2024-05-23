@@ -1,0 +1,22 @@
+.main {
+	display: grid;
+	padding: 1.5rem 25rem;
+	gap: 1rem;
+	grid-template-areas:
+		"company company ads"
+		"company company other"
+		"alert alert other"
+		"jobs jobs  other";
+	grid-template-columns: 2fr 1fr 1.1fr;
+}
+
+section {
+	border-radius: 0.3rem;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	background-color: white;
+}
+
+.other {
+	grid-area: other;
+}

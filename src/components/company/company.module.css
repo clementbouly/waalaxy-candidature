@@ -1,0 +1,89 @@
+.company {
+	grid-area: company;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.bg {
+	width: 100%;
+}
+
+.logo {
+	width: 8rem;
+	border: 5px solid white;
+	position: absolute;
+	top: 5rem;
+	left: 1.3rem;
+}
+
+.details {
+	margin-top: 2.5rem;
+	padding: 1.3rem;
+}
+
+.details h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.details h4 {
+	font-weight: lighter;
+	margin: 0.2rem 0;
+}
+
+.details p {
+	margin: 0.5rem 0;
+	font-size: 0.9rem;
+	color: #666666;
+}
+
+.network {
+	margin-top: 1rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.network img {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	margin-left: 5px;
+}
+
+.nav {
+	border-top: 1px solid rgb(233, 230, 230);
+}
+
+.nav ul {
+	display: flex;
+	padding-left: 1rem;
+	margin-top: 1rem;
+	gap: 1.5rem;
+	list-style: none;
+	color: #666666;
+	font-weight: bold;
+}
+
+.nav ul li {
+	cursor: pointer;
+}
+
+.selected {
+	color: #01754f;
+	position: relative;
+}
+
+.selected::after {
+	content: "";
+	position: absolute;
+	width: 150%;
+	height: 2px;
+	background-color: #01754f;
+	bottom: -1.1rem;
+	left: -1rem;
+}
