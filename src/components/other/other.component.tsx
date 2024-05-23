@@ -12,14 +12,14 @@ export const Other = () => {
 		<section className={styles.other}>
 			<div className={styles.candidates}>
 				<h1>Candidats motivés </h1>
-				<div className={`${styles.profileCard} ${animate ? styles.pulsation : ""}`}>
+				<div className={`${styles.profileCard} ${animate ? styles.pulsation : ""}`} id="clement">
 					<div>
 						<img src={profileImage} alt="Profile Picture" />
 						<h2>Clément Bouly</h2>
 						<p>Fullstack Developer</p>
 					</div>
 					{showContact && (
-						<div className={`${styles.contact} ${animate ? styles.pulsation : ""}`}>
+						<div className={styles.contact}>
 							<p>0643789426</p>
 							<p>clementbouly@hotmail.fr</p>
 						</div>

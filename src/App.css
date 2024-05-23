@@ -3,7 +3,7 @@
 	display: grid;
 	margin: 0 auto;
 	width: 70rem;
-	padding-top: 4rem;
+	padding-top: 1rem;
 	gap: 1rem;
 	grid-template-areas:
 		"company company ads"

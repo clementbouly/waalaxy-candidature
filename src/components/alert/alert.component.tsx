@@ -8,7 +8,9 @@ export const Alert = () => {
 		<section className={styles.alert}>
 			<img src={notificationsLogo} alt="alert" />
 			Alerte : Un candidat intéressant est disponible actuellement !
-			<Button onClick={goToProfile}>Voir le candidat</Button>
+			<a href="#clement">
+				<Button onClick={goToProfile}>Voir le candidat</Button>
+			</a>
 		</section>
 	)
 }
