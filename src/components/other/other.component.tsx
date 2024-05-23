@@ -40,7 +40,7 @@ export const Other = () => {
 							setAnimate(!animate)
 						}}
 					/>
-					Aucun autres candidats aussi motivé actuellement
+					Aucun autres candidats aussi motivés actuellement
 				</div>
 			</div>
 		</section>

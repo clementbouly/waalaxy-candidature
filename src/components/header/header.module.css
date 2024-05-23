@@ -123,3 +123,24 @@
 		display: none;
 	}
 }
+
+.messages {
+	position: relative;
+}
+
+.notification {
+	/* red notification  */
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	padding: 0.1rem 0.3rem;
+	position: absolute;
+	top: -0.3rem;
+	right: 0.8rem;
+	font-size: 0.7rem;
+
+	@media screen and (max-width: 900px) {
+		top: -0.3rem;
+		right: -0.3rem;
+	}
+}

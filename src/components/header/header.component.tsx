@@ -19,6 +19,10 @@ export const Header = () => {
 		setSearchInput("Clément Bouly")
 	}
 
+	const rickRoll = () => {
+		window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	}
+
 	return (
 		<header className={styles.header}>
 			<div className={styles.headerContent}>
@@ -44,8 +48,9 @@ export const Header = () => {
 							<img src={jobLogo} alt="Jobs" />
 							<a href="#">Offres d'emploi</a>
 						</li>
-						<li>
+						<li className={styles.messages} onClick={rickRoll}>
 							<img src={messagesLogo} alt="Messages" />
+							<div className={styles.notification}>1</div>
 							<a href="#">Messagerie</a>
 						</li>
 						<li>
