@@ -34,18 +34,18 @@ export const Header = () => {
 						<input type="text" placeholder="Recherche" onChange={replaceSearchInput} value={searchInput} />
 					</div>
 				</div>
-				<nav onClick={fakeClick} className={styles.headerNav}>
+				<nav className={styles.headerNav}>
 					<ul>
 						<li>
-							<img src={home} alt="Home" />
+							<img src={home} alt="Home" onClick={fakeClick} />
 							<a href="#">Accueil</a>
 						</li>
 						<li>
-							<img src={networkLogo} alt="Network" />
+							<img src={networkLogo} alt="Network" onClick={fakeClick} />
 							<a href="#">Réseau</a>
 						</li>
 						<li>
-							<img src={jobLogo} alt="Jobs" />
+							<img src={jobLogo} alt="Jobs" onClick={fakeClick} />
 							<a href="#">Offres d'emploi</a>
 						</li>
 						<li className={styles.messages} onClick={rickRoll}>
@@ -54,7 +54,7 @@ export const Header = () => {
 							<a href="#">Messagerie</a>
 						</li>
 						<li>
-							<img src={notificationsLogo} alt="Notifications" />
+							<img src={notificationsLogo} alt="Notifications" onClick={fakeClick} />
 							<a href="#">Notifications</a>
 						</li>
 
