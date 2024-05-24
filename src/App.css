@@ -2,6 +2,7 @@
 	width: 100%;
 	display: grid;
 	margin: 0 auto;
+	margin-bottom: 1rem;
 	width: 70rem;
 	padding-top: 1rem;
 	gap: 1rem;
@@ -21,7 +22,8 @@
 			"jobs jobs jobs"
 			"other other other";
 		grid-template-columns: 1fr;
-		padding: 1.5rem 0rem;
+		padding: 0.5rem 0rem;
+		margin-bottom: 0rem;
 		width: 95%;
 	}
 }
