@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { goToProfile } from "../utils/utils"
+import { ChangeEvent, useEffect, useState } from "react"
+import { goToProfile, useDebounce } from "../utils/utils"
 import styles from "./header.module.css"
 import home from "/src/assets/home.svg"
 import jobLogo from "/src/assets/jobLogo.svg"
@@ -11,12 +11,20 @@ import profileImage from "/src/assets/profileImage.png"
 
 export const Header = () => {
 	const [searchInput, setSearchInput] = useState("")
+	const debouncedSearchInput = useDebounce(searchInput, 300)
+
+	useEffect(() => {
+		if (searchInput && debouncedSearchInput !== "Clément Bouly") {
+			setSearchInput("Clément Bouly")
+		}
+	}, [debouncedSearchInput])
+
 	const fakeClick = () => {
 		alert("Tu as cru que j'allais recoder Linkedin ? 20% d'effort, 80% de résultat !")
 	}
 
-	const replaceSearchInput = () => {
-		setSearchInput("Clément Bouly")
+	const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+		setSearchInput(event.target.value)
 	}
 
 	const rickRoll = () => {
@@ -31,7 +39,7 @@ export const Header = () => {
 						<img src={linkedinLogo} alt="LinkedIn Logo" />
 					</div>
 					<div className={styles.searchBar}>
-						<input type="text" placeholder="Recherche" onChange={replaceSearchInput} value={searchInput} />
+						<input type="text" placeholder="Recherche" onChange={handleInputChange} value={searchInput} />
 					</div>
 				</div>
 				<nav className={styles.headerNav}>
